@@ -1,6 +1,6 @@
 function Hero() {
-    return (<section className=" bg-[url('../../assets/img/acc.jpg')] bg-no-repeat bg-cover relative pt-9 ">
-        <div className='container md:max-w-7xl'>
+    return (<section className="max-w-7xl px-[50px] mb-0 bg-[url('../../assets/img/acc.jpg')] bg-no-repeat bg-cover relative pt-9 " >
+        <div className='md:max-w-7xl'>
             <div className="flex flex-col gap-10 mt-3 lg:flex-row lg:gap-10 pb-36">
                 <div className="lg:w-1/2 lg:order-1  pt-[106px] lg:pr-[3.5rem] lg:glex lg:flex-col lg:gap-10">
                     <div className="flex items-center justify-center lg:block">
@@ -17,7 +17,7 @@ function Hero() {
                               lg:text-[40px]
                               lg:text-left
                          ">
-                            Digital solution for Your text bouge
+                            Digital solution for Your text
                         </h1>
                         <p className="text-gray-400 text-center
                         lg:text-left
@@ -53,8 +53,8 @@ function Hero() {
                     </div>
                 </div>
 
-                <div className="relative   lg:w-1/2 order-1 px-5 ">
-                    <div className="h-[520px] w-full  overflow-hidden lg:static sm:pl-36 lg:pl-0">
+                <div className="relative   lg:w-1/2 order-1 px-5 glass-effect ">
+                    <div className="h-[520px] w-full  overflow-hidden lg:static sm:pl-36 lg:pl-0 ">
                         <img src="src/assets/img/img_1.png" alt="" className=" bg-no-repeat bg-cover  "/>
                     </div>
                     <div className="absolute top-[140px] lg:-left-[60px] h-[420px] w-full  overflow-hidden z-20 ">

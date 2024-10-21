@@ -27,8 +27,8 @@ const Portfolio = () => {
       }
     }, [showfilter]);
     return (
-        <section id="portfolio" className="bg-gradient-to-r from-gray-950 to-[#111722] pb-3.5">
-            <div className="container md:max-w-7xl">
+        <section id="portfolio" className="max-w-7xl px-[50px] mb-0  pb-3.5"  >
+            <div className=" md:max-w-7xl pt-[50] mx-auto">
 
                 {/*    Our Team*/}
                 <div className="relative">
@@ -53,18 +53,18 @@ const Portfolio = () => {
                     </div>
                 </div>
 
-                <div className="lg:mt-[270px]">
+                <div className="lg:mt-[70px] pt-28 flex items-center justify-center">
                     <div
-                        className=" flex items-center justify-center lg:flex lg:items-center lg:justify-center gap-3 mt-32">
+                        className=" flex flex-wrap items-center justify-center lg:flex lg:items-center lg:justify-center gap-3 mt-32">
                         <button
-                            className="py-2 px-4 rounded-[8px] text-white lg:text-lg"
+                            className="py-2 px-4 rounded-[8px] text-gray-50 lg:text-lg cursor-pointer z-20"
                             onClick={() => setShowfilter("all")}
 
                         >
                             All
                         </button>
                         <button
-                            className="py-2 px-4 rounded-[8px] text-white lg:text-lg"
+                            className="py-2 px-4 rounded-[8px] text-white lg:text-lg cursor-pointer z-20"
                             onClick={()=>setShowfilter("Web Design")}
                         >
 
@@ -72,14 +72,14 @@ const Portfolio = () => {
 
                         </button>
                         <button
-                            className="py-2 px-4 rounded-[8px] text-white lg:text-lg"
+                            className="py-2 px-4 rounded-[8px] text-white lg:text-lg cursor-pointer z-20"
                             onClick={()=> setShowfilter("video")}
                         >
                             Digital Experiences
 
                         </button>
                         <button
-                            className="py-2 px-4 rounded-[8px] text-white lg:text-lg"
+                            className="py-2 px-4 rounded-[8px] text-white lg:text-lg cursor-pointer z-20"
                             onClick={()=> setShowfilter("multimedia")}
 
                         >
@@ -89,7 +89,7 @@ const Portfolio = () => {
                 </div>
 
                 {/*       Display data portfolio */}
-                <div className="lg:grid lg:grid-cols-3 lg:gap-10 md:grid md:grid-cols-2 mt-16 ">
+                <div className="max-w-fit flex flex-col px-4 items-center justify-center gap-3.5 mt-16 md:grid md:grid-cols-3 md:items-center md:justify-center sm:grid sm:grid-cols-2 mx-auto">
 
                     {portfolios.map((data, index) => (
 
@@ -97,18 +97,17 @@ const Portfolio = () => {
                             key={index}
                             className={`${
                                 index === 0
-                                    ? " lg:col-span-2  md:col-span-2  relative group overflow-hidden "
+                                    ? " lg:col-span-2  md:col-span-2  relative group overflow-hidden sm:px-6  md:px-0 "
                                     : index === 1
-                                        ? "  row-span-2 lg:col-span-1 relative group "
+                                        ? "  row-span-2 lg:col-span-1 relative group py-6"
                                         : index === 2 || index === 3
-                                            ? "relative group"
+                                            ? "relative group "
                                             : ""
                             }`}>
-
                             <img
                                 src={data.imgUrl}
                                 alt={`Image ${index + 1}`}
-                                className={`${index === 2 || index === 3 ? " lg:absolute lg:bottom-1  lg:max-w-[408px] lg:max-h-[87] " : ""}`}
+                                className=""
                             />
 
                             <div

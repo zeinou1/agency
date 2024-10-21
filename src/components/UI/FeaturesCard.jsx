@@ -3,7 +3,7 @@ const {title,description,icon} = item
 
     return (
         <>
-            <div className="container flex flex-col md:max-w-7xl md:mx-auto">
+            <div className=" flex flex-col md:max-w-7xl mx-auto">
 
                 <div className=" px-6">
                     <div className="text-center flex flex-col items-center justify-center gap-9 mt-9">

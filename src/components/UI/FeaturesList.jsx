@@ -4,7 +4,7 @@ import {featuresData} from "../../assets/data/data";
 const FeaturesList = () => {
 
     return (
-        <section className="bg-gradient-to-r from-gray-950 to-[#111722] pb-3.5">
+        <section className="max-w-7xl px-[50px] mb-0 bg-gradient-to-r from-gray-950 to-[#111722] pb-3.5">
             <div className="relative">
                 <h2 className="text-blue-600 opacity-20 md:text-[95px] text-[40px] text-center uppercase pt-[118px] font-bold">features</h2>
                 <div
