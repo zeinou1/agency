@@ -183,3 +183,12 @@ img {
     height: 100%;
     object-fit: cover;
 }*/
+/* slider react disable arrow */
+.slick-prev, .slick-next {
+    display: none !important;
+}
+.slick-dots button:before {
+    color: #FFFFFF !important;
+
+}
+

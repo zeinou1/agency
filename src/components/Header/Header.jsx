@@ -4,20 +4,20 @@ import {useEffect, useRef} from "react";
 
 const navLinks = [
     {
-        path: "/home",
+        path: "#home",
         display: "Home",
     },
     {
-        path: "/feature",
+        path: "#feature",
         display: "Features",
     },
     {
-        path: "/Pages",
-        display: "Pages",
+        path: "#about",
+        display: "About",
     },
     {
-        path: "/Support",
-        display: "Support",
+        path: "#portfolio",
+        display: "Portfolio",
     },
 ];
 
@@ -44,10 +44,8 @@ const Header = () => {
     }, []);
     // menu toggle
     const displayMenu = () => {
-
         menuRef.current.classList.toggle("show__menu");
     }
-
 
     //  redirection function
     const handleClick = (e) => {
