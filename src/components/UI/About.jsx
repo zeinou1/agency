@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import Team1 from "../../assets/img/Team1.png";
 import Common from "./Common.jsx";
 
 const About = () => {
@@ -32,11 +31,8 @@ const About = () => {
   }, []);
 
   return (
-    <section
-      id="about"
-      className=" max-w-7xl px-[50px] mb-0 bg-gradient-to-r from-gray-950 to-[#111722] pb-3.5"
-    >
-      <div className="container md:max-w-7xl">
+    <section id="about" className=" mb-0  pb-3.5">
+      <div id="about" className="px-4 max-w-7xl mx-auto md:px-12 overflow-hidden">
         <div className="about">
           <Common
             title={"ABOUT US"}
@@ -59,7 +55,7 @@ const About = () => {
           </button>
         </div>
         {/*    Next */}
-        <div className="container md:max-w-7xl mt-[70px]">
+        <div className="about mt-[70px]">
           <div className="flex flex-col gap-10 mt-3 lg:flex-row lg:gap-10 pb-36">
             <div
               data-aos="fade-left"
@@ -68,20 +64,20 @@ const About = () => {
               className="lg:w-1/2 lg:order-2 order-2  mt-9"
             >
               <div className="w-full flex flex-col gap-5 mt-6">
-                <h1 className="text-white  lg:text-[40px] font-bold text-[20px] ">
+                <h1 className="text-white text-center lg:text-[40px] font-bold text-[20px]  md:text-left ">
                   We are Creative Digital Agency Based in USA
                 </h1>
-                <p className="text-gray-400 text-left ">
+                <p className="text-gray-400 text-center md:text-left ">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                   condimentum sapien ac leo cursus dignissim. In ac lectus vel orci
                   accumsan ultricies at in libero accumsan.
                 </p>
-                <p className="text-gray-400 text-left">
+                <p className="text-gray-400 text-center md:text-left ">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                   condimentum sapien ac leo cursus dignissim. In ac lectus vel orci
                   accumsan ultricies at in libero accumsan.
                 </p>
-                <p className="text-gray-400 ">
+                <p className="text-gray-400 text-center md:text-left ">
                   Phasellus ex massa, facilisis ac vestibulum eget, ultrices quis nulla.
                   Integer vitae magna lacus. Sed venenatis auctor dolor. Phasellus ex
                   massa, facilisis ac vestibulum eget, ultrices quis nulla. Integer vitae
@@ -115,7 +111,7 @@ const About = () => {
                 <img
                   src="src/assets/img/about-2.jpg.png"
                   alt=""
-                  className="w-full lg:max-w-[350px] object-cover bg-cover bg-no-repeat  "
+                  className="w-full lg:max-w-[350px] object-cover bg-cover bg-no-repeat bg-white/30 backdrop-blur-sm border border-white/20  pr-6 pt-5   "
                 />
               </div>
             </div>

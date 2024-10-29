@@ -19,7 +19,7 @@ import Contact from "../components/Contact";
 const Home = () => {
   return (
     <>
-      <section>
+      <section className="">
         <div className="main">
           <Hero />
           <FeaturesList />
@@ -29,7 +29,7 @@ const Home = () => {
         </div>
       </section>
       {/* Testimonial */}
-      <section className="md:mx-W-7xl mx-auto px-[50px]">
+      <section id="testimonial">
         <Common
           title="Testimonial"
           soustitle="Testimonial"
@@ -52,7 +52,9 @@ const Home = () => {
           </p>
         </div>
         <div className="wrapper mt-[50px]">
-          <div className="content grid grid-cols-2 gap-8 items-center justify-center sm:flex sm:items-center sm:justify-center sm:flex-wrap sm:gap-8">
+          <div className="content 
+           flex items-center justify-center gap-5 flex-wrap
+           sm:flex sm:items-center sm:justify-center sm:flex-wrap sm:gap-8">
             <img src={UIDK} alt="" className="text-gray-50" />
             <img src={TAI} alt="" />
             <img src={GRY} alt="" />
@@ -61,8 +63,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="md:mx-W-7xl mx-auto px-[50px] ">
-        <div>
+
+      <section id="pricing">
+        <div className="px-4 max-w-7xl mx-auto md:px-12 overflow-hidden">
           <Common
             title="Pricing plans"
             soustitle="Affordable Pricing With Simple Plans"
@@ -71,7 +74,7 @@ const Home = () => {
         </div>
         <div className="pricing__wrapper mt-[300px] ">
           <div className="pricing__content  md:flex md:flex-row md:items-center  md:justify-center flex flex-col items-center justify-center">
-            <div className="free__plan flex flex-col  min-h-[450px] shadow-md  w-[369px] h-full  rounded-lg mt-5 py-6 text-left  max-w-[328.46px]">
+            <div className="free__plan flex flex-col  min-h-[450px]  w-[369px] h-full  rounded-lg mt-5 py-6 text-left  max-w-[328.46px]">
               <div className="border-b border-gray-700">
                 <h3 className="text-[36px] text-gray-50 text-center  leading-8">Free</h3>
                 <p className="text-sm text-gray-50 text-center mt-4 mb-8">
@@ -88,7 +91,6 @@ const Home = () => {
                 </p>
               </div>
               <div className="features flex flex-col mt-[40px] items-center justify-center  px-[36px]">
-                {/* checked icon */}
                 <ul className="flex flex-grow flex-col flex-shrink-0">
                   <li className=" flex space-x-3 items-center gap-2">
                     <img src={checked} alt="" className="h-5 w-5 flex-shrink-0 " />
@@ -124,8 +126,8 @@ const Home = () => {
                 </ul>
               </div>
             </div>
-            {/* basic plan */}
-            <div className="basic__plan  max-w-[328.46px] flex flex-col  min-h-[450px] shadow-md  w-[369px] h-full   mt-5  py-6 text-left md:border-l-2 md:border-gray-700">
+
+            <div className="basic__plan  max-w-[328.46px] flex flex-col  min-h-[450px]  w-[369px] h-full   mt-5  py-6 text-left md:border-l-2 md:border-gray-700">
               <div className="border-b border-gray-700">
                 <h3 className="text-[36px] text-gray-50 text-center  leading-8">Basic</h3>
                 <p className="text-sm text-gray-50 text-center mt-4 mb-8">
@@ -142,7 +144,6 @@ const Home = () => {
                 </p>
               </div>
               <div className="features flex flex-col mt-[40px] items-center px-[36px]">
-                {/* checked icon */}
                 <ul className="flex flex-grow flex-col flex-shrink-0">
                   <li className=" flex space-x-3 items-center gap-2">
                     <img src={checked} alt="" className="h-5 w-5 flex-shrink-0 " />
@@ -178,7 +179,7 @@ const Home = () => {
                 </ul>
               </div>
             </div>
-            {/* premium plan */}
+
             <div className="premium__plan  max-w-[328.46px] flex flex-col min-h-[450px]   w-[369px] h-full   mt-5  py-6 md:border-l-2 md:border-gray-700 text-left">
               <div className="border-b border-gray-700">
                 <h3 className="text-[36px] text-gray-50 text-center  leading-8">
@@ -198,7 +199,6 @@ const Home = () => {
                 </p>
               </div>
               <div className="features flex flex-col mt-[40px] items-center px-[36px]">
-                {/* checked icon */}
                 <ul className="flex flex-grow flex-col flex-shrink-0">
                   <li className=" flex space-x-3 items-center gap-2">
                     <img src={checked} alt="" className="h-5 w-5 flex-shrink-0 " />
@@ -234,29 +234,37 @@ const Home = () => {
                 </ul>
               </div>
             </div>
-            {/* end of pricing plans */}
           </div>
           <div className="mt-[50px]">
-            <h4 className="text-[26px] text-center font-[500] text-gray-950">
+            <h4 className="text-[26px] text-center font-[500] text-gray-50">
               Looking for a company solution?
             </h4>
             <p className="text-sm text-center">Contact our team to get a quote.</p>
           </div>
         </div>
       </section>
-      <section className="md:max-w-7xl mx-auto px-[50px] border-b-2 border-gray-700 mb-4">
-        <div>
+
+      {/* Blogs */}
+
+      <section id="blogs" className="border-b-2 border-gray-700 mb-4  ">
+        <div className="">
           <Common
             title="blogs"
             soustitle="Latest News & Articles From Our Blog"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus."
           />
         </div>
-        <div className="blogs__wrapper mt-[250px]">
-          <div className="blogs__content">
-            <div className="blogs__group flex justify-center flex-col items-center md:flex md:flex-row md:justify-center  md:gap-7">
-              <div className="blogs__item-1 relative w-[346px] max-h-auto mb-3">
-                <img src={article1} alt="article1" />
+        <div className="px-4 max-w-7xl mx-auto md:px-12 overflow-hidden blogs__wrapper mt-[250px] ">
+          <div className="blogs__content ">
+            <div
+              className="blogs__group 
+            
+            flex flex-col items-center justify-center
+            md:flex md:flex-row md:items-center md:justify-center md:flex-wrap md:gap-10
+         "
+            >
+              <div className="blogs__item-1 relative md:w-[346px] max-h-auto mb-3">
+                <img src={article1} alt="article1" className="w-[400px] md:w-full" />
                 <div className="flex items-center gap-5 mt-4">
                   <div className="">
                     <span className="pr-3 text-gray-300 text-sm">
@@ -275,9 +283,9 @@ const Home = () => {
                   Online Busines
                 </p>
               </div>
-              {/*  */}
-              <div className="blogs__item-2 relative w-[346px] max-h-auto mb-3">
-                <img src={article2} alt="article1" />
+
+              <div className="blogs__item-2 relative md:w-[346px] max-h-auto mb-3">
+                <img src={article2} alt="article1" className="w-[400px] md:w-full"/>
                 <div className="flex items-center gap-5 mt-4">
                   <div className="">
                     <span className="pr-3 text-gray-300 text-sm">
@@ -296,9 +304,9 @@ const Home = () => {
                   Online Busines
                 </p>
               </div>
-              {/* article-2 */}
-              <div className="blogs__item-3 relative w-[346px] max-h-auto mb-3">
-                <img src={article3} alt="article1" />
+
+              <div className="blogs__item-3 relative md:w-[346px] max-h-auto mb-3">
+                <img src={article3} alt="article1" className="w-[400px] md:w-full" />
                 <div className="flex items-center gap-5 mt-4">
                   <div className="">
                     <span className="pr-3 text-gray-300 text-sm">
@@ -321,13 +329,14 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="md:max-w-7xl mx-auto px-[50px] ">
-        <div className="">
-          <Contact />
-        </div>
+
+      <section id="contact">
+        <Contact />
       </section>
-      <section className="md:max-w-7xl mx-auto px-[50px] mt-32 ">
-        <div className=" lg:flex lg:gap-10 lg:justify-between ">
+
+      {/* Footer */}
+      <section  className=" mt-32 ">
+        <div className="px-4 max-w-7xl mx-auto md:px-12 overflow-hidden lg:flex lg:gap-10 lg:justify-between ">
           <div>
             <h6 className="text-center lg:text-left lg:text-2xl text-gray-50 lg:w-[60%]  ">
               Looking for a collaboration? Get Started Today!

@@ -3,7 +3,7 @@ const {title,description,icon} = item
 
     return (
         <>
-            <div className=" flex flex-col md:max-w-7xl mx-auto">
+            <div className=" flex flex-col  mx-auto">
 
                 <div 
                 data-aos="fade-up"

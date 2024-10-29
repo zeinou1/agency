@@ -5,8 +5,11 @@ import Common from "./Common.jsx";
 
 const Portfolio = () => {
   const [portfolios, setPortfolios] = useState(portfolio);
+
   console.log(portfolios);
+
   const [showfilter, setShowfilter] = useState("all");
+  
   useEffect(() => {
     if (showfilter === "all") {
       setPortfolios(portfolio);
@@ -25,8 +28,8 @@ const Portfolio = () => {
     }
   }, [showfilter]);
   return (
-    <section id="portfolio" className="max-w-7xl px-[50px] mb-0  pb-3.5">
-      <div className=" md:max-w-7xl pt-[50] mx-auto">
+    <section id="portfolio" className=" mb-0  pb-3.5">
+      <div className="max-w-7xl mx-auto md:px-12 overflow-hidden">
         {/*    Our Team*/}
 
         <div className="portfolio">
