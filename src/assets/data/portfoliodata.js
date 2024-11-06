@@ -1,7 +1,7 @@
-import portfolioImg01 from "../img/p1.png"
-import portfolioImg02 from "../img/p2.png"
-import portfolioImg03 from "../img/p3.png"
-import portfolioImg04 from "../img/p4.png"
+import portfolioImg01 from "../../assets/img/p1.png"
+import portfolioImg02 from "../../assets/img/p2.png"
+import portfolioImg03 from "../../assets/img/p3.png"
+import portfolioImg04 from "../../assets/img/p4.png"
 
 export const portfolio = [
     {

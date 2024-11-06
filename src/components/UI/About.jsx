@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Common from "./Common.jsx";
-
+import {aboutimg} from "../../assets/img/about-1.jpg"
 const About = () => {
   const buttonRefs = useRef([]);
 
@@ -94,7 +94,7 @@ const About = () => {
             >
               <div className="img1 h-[520px] w-full md:max-w-[344px]  overflow-hidden lg:static sm:pr-14 md:pr-0 ">
                 <img
-                  src="src/assets/img/about-1.jpg"
+                  src={aboutimg}
                   alt=""
                   className="w-full object-cover bg-cover bg-no-repeat "
                 />
