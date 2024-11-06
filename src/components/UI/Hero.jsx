@@ -1,5 +1,6 @@
 import hero1 from "../../assets/img/img_1.png"
 import hero2 from "../../assets/img/img.png"
+import {Typewriter} from "react-simple-typewriter";
 function Hero() {
   return (
     <section
@@ -35,7 +36,15 @@ function Hero() {
                               lg:text-left
                          "
               >
-                Digital solution for Your text
+                Digital solution for Your  <Typewriter
+                        words={["Digital", "Seo"]}
+                        loop
+                        cursor
+                        cursorStyle="|"
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                    />
               </h1>
               <p
                 data-aos="fade-right"
