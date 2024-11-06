@@ -41,7 +41,7 @@ const Contact = () => {
             </div>
             <div className="network-social">
               <h6 className="text-[20px] text-gray-50">Phone Number</h6>
-              <p className="text-sm text-gray-60 mt-2">
+              <div className="text-sm text-gray-60 mt-2">
                 <ul
                   className="
                 flex flex-grow  flex-shrink-0 
@@ -60,7 +60,7 @@ const Contact = () => {
                     <i className="ri-linkedin-box-line text-xl text-gray-50"></i>
                   </li>
                 </ul>
-              </p>
+              </div>
             </div>
           </div>
 

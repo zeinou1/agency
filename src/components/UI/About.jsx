@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Common from "./Common.jsx";
-import {aboutimg} from "../../assets/img/about-1.jpg"
+import imgabout from "../../assets/img/about-1.jpg"
+import abouUs from "../../assets/img/about-2.jpg"
 const About = () => {
   const buttonRefs = useRef([]);
 
@@ -94,8 +95,8 @@ const About = () => {
             >
               <div className="img1 h-[520px] w-full md:max-w-[344px]  overflow-hidden lg:static sm:pr-14 md:pr-0 ">
                 <img
-                  src={aboutimg}
-                  alt=""
+                  src={imgabout}
+                  alt="img about"
                   className="w-full object-cover bg-cover bg-no-repeat "
                 />
               </div>
@@ -109,7 +110,7 @@ const About = () => {
                                "
               >
                 <img
-                  src="src/assets/img/about-2.jpg.png"
+                  src={abouUs}
                   alt=""
                   className="w-full lg:max-w-[350px] object-cover bg-cover bg-no-repeat bg-white/30 backdrop-blur-sm border border-white/20  pr-6 pt-5   "
                 />
