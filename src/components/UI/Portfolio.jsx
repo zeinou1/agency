@@ -42,29 +42,28 @@ const Portfolio = () => {
           />
         </div>
 
-        {/* // */}
         <div className="lg:mt-[70px] pt-28 flex items-center justify-center">
           <div className=" flex flex-wrap items-center justify-center lg:flex lg:items-center lg:justify-center gap-3 mt-32">
             <button
-              className="py-2 px-4 rounded-[8px] text-gray-50 lg:text-lg cursor-pointer z-20"
+              className={`py-2 px-4 rounded-[8px] text-gray-50 lg:text-lg cursor-pointer z-20 ${showfilter === "all" ? "border-b-2 border-blue-600 underline underline-offset-4 underline-blue-600" : ""}`}
               onClick={() => setShowfilter("all")}
             >
               All
             </button>
             <button
-              className="py-2 px-4 rounded-[8px] text-white lg:text-lg cursor-pointer z-20"
+              className={`py-2 px-4 rounded-[8px] text-gray-50 lg:text-lg cursor-pointer z-20 ${showfilter === "Web Design" ? "border-b-2 border-blue-600 underline underline-offset-4 underline-blue-600" : ""}`}
               onClick={() => setShowfilter("Web Design")}
             >
               Branding Strategy
             </button>
             <button
-              className="py-2 px-4 rounded-[8px] text-white lg:text-lg cursor-pointer z-20"
+              className={`py-2 px-4 rounded-[8px] text-gray-50 lg:text-lg cursor-pointer z-20 ${showfilter === "video" ? "border-b-2 border-blue-600 underline underline-offset-4 underline-blue-600" : ""}`}
               onClick={() => setShowfilter("video")}
             >
               Digital Experiences
             </button>
             <button
-              className="py-2 px-4 rounded-[8px] text-white lg:text-lg cursor-pointer z-20"
+              className={`py-2 px-4 rounded-[8px] text-gray-50 lg:text-lg cursor-pointer z-20 ${showfilter === "multimedia" ? "border-b-2 border-blue-600 underline underline-offset-4 underline-blue-600" : ""}`}
               onClick={() => setShowfilter("multimedia")}
             >
               eCommerce
