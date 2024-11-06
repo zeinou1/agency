@@ -6,9 +6,9 @@ const FeaturesList = () => {
   return (
     <section
       id="feature"
-      className="md:max-w-7xl px-[50px] mb-0 bg-gradient-to-r from-gray-950 to-[#111722] pb-3.5"
+      className="  mb-0  pb-3.5"
     >
-      <div className="feature">
+      <div id="feature" className="px-4 max-w-7xl mx-auto md:px-12 overflow-hidden">
         <Common
           title={"features"}
           soustitle={"Our Unique & Awesom Core Features"}
@@ -19,7 +19,8 @@ const FeaturesList = () => {
       </div>
 
       <div
-        className="pt-[300px] px-5
+        className="
+            pt-[300px] px-5
             grid grid-cols-1
             sm:grid-cols-2
             md:max-w-7xl

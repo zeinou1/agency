@@ -68,7 +68,7 @@ const Header = () => {
 
 
                     <nav
-                        className=" flex items-center justify-between p-3 lg:flex lg:items-center lg:justify-between  ">
+                        className="max-w-7xl mx-auto flex items-center justify-between py-2 px-4 lg:flex lg:items-center lg:justify-between  ">
                         <div>
                             <img src={logo} alt="" className="w-34 h-34"/>
                         </div>
@@ -111,7 +111,7 @@ const Header = () => {
                                 <button className="p-3 px-6 bg-gray-900  rounded-sm text-white ">Login</button>
                             </div>
                             <div>
-                                <span className="cursor-pointer mr-2"> 🌙</span>
+                             
                                 <span className="text-white lg:hidden " onClick={displayMenu}> <i
                                     className="ri-menu-3-line"></i></span>
 

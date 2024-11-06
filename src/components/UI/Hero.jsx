@@ -1,12 +1,14 @@
+import hero1 from "../../assets/img/img_1.png"
+import hero2 from "../../assets/img/img.png"
 function Hero() {
   return (
     <section
       id="home"
-      className="md:max-w-7xl px-[50px] mb-0 bg-[url('../../assets/img/acc.jpg')] bg-no-repeat bg-cover relative pt-9 "
+      className="mb-0  bg-no-repeat bg-cover relative pt-9 "
     >
-      <div className="md:max-w-7xl">
+      <div className="px-4 max-w-7xl mx-auto md:px-12 overflow-hidden">
         <div className="flex flex-col gap-10 mt-3 lg:flex-row lg:gap-10 pb-36">
-          <div className="lg:w-1/2 lg:order-1  pt-[106px] lg:pr-[3.5rem] lg:glex lg:flex-col lg:gap-10">
+          <div className="lg:w-1/2 lg:order-1  pt-[106px] lg:pr-[3.5rem] lg:flex lg:flex-col lg:gap-10">
             <div
               data-aos="fade-down"
               data-aos-duration="1500"
@@ -85,20 +87,30 @@ function Hero() {
             data-aos="fade-left"
             data-aos-duration="1500"
             data-aos-delay="200"
-            className="relative   lg:w-1/2 order-1 px-5 glass-effect "
+            className="relative w-full  lg:w-1/2 order-1 px-5 
+            
+            "
           >
-            <div className="h-[520px] w-full  overflow-hidden lg:static sm:pl-36 lg:pl-0 ">
+            <div className="h-[520px] w-full  overflow-hidden lg:static sm:pl-36 lg:pl-0    ">
               <img
-                src="src/assets/img/img_1.png"
-                alt=""
+                src={hero1}
+                alt="heroimg"
                 className=" bg-no-repeat bg-cover  "
               />
             </div>
-            <div className="absolute top-[140px] lg:-left-[60px] h-[420px] w-full  overflow-hidden z-20 ">
+
+            <div className="w-[395px] absolute top-[140px] lg:-left-[60px] h-[420px] md:w-full overflow-hidden z-20 
+            
+            ">
               <img
-                src="src/assets/img/img.png"
-                alt=""
-                className="w-full max-w-[350px] "
+                src={hero2}
+                alt="heroimg2"
+                className="w-full 
+              
+                md:max-w-[350px]
+                
+                
+                md:bg-white/30 md:backdrop-blur-sm md:border md:border-white/20  md:pr-6 md:pt-5  "
               />
             </div>
           </div>

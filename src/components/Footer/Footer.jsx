@@ -4,13 +4,16 @@ const Footer = () => {
   const dateNow = new Date().getFullYear();
   return (
     <footer
-      className="max-w-7xl mx-auto px-[50px] mt-[50px] 
-    border-t-2 border-gray-700
+    id="footer"
+      className="px-4  max-w-7xl mx-auto md:px-12 overflow-hidden 
+    md:border-t-2 md:border-gray-700
     "
     >
       <div className="footer__wrapper mt-4  ">
         <div className="footer__content">
-          <div className="footer__group  lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:gap-4 ">
+          <div className="footer__group  
+          
+          lg:grid lg:grid-cols-5 lg:grid-rows-1 lg:gap-4 ">
             <div className="footer__item-1">
               <img src={logo} alt="logo footer" />
               <p className="text-sm">
